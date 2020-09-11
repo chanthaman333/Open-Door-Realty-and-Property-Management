@@ -16,13 +16,13 @@
  
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
+//Typography Styles
 h1, h2, h3, {
   font-family: 'Kufam', sans-serif;
-  color: white;
 }
 
-body, .navbar {
+//Background Gradient 
+.navbar, .home-callout {
  //Gradient provided by @ighosh at uiGradients.com
   background: #333333;  /* fallback for old browsers */
   background: -webkit-linear-gradient(left, #dd1818, #333333);
@@ -32,6 +32,24 @@ body, .navbar {
   
 }
 
+//Nav Styles
 .navbar {
   border: none;
+}
+
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+//Home Page Styles
+.home-callout {
+  color: white ;
+  padding-top: 50px;
+  margin-top: -20px;
+  padding-bottom: 100px;
 }
