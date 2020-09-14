@@ -1,1 +1,20 @@
-<h1>Contact Form</h1>
+<div class="container">
+  <h3 class="text-center">Contact Us for weekly newsletter with special offers for current and future home owners</h3>
+ 
+ <%= form_for "/contacts" do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    
+    <%= f.label :Phone_Number %>
+    <%= f.text_field :Phone_Number %>
+    
+    <%= f.label :Comments %>
+    <%= f.text_area :Comments %>
+    
+    <%= f.submit 'Submit' %>
+  <% end %>
+    
+</div>
