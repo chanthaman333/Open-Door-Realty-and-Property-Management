@@ -3,8 +3,9 @@
     <h3 class="text-center">Contact Us For weekly newsletter with special offers for current and future home owners</h3>
    
    <div class="col-md-4 col-md-offset-4">
+     <%= flash[:notice] %>
      <div class="well">
-       <%= form_for "/contacts" do |f| %>
+       <%= form_for @contact do |f| %>
            <div class="form-group">
               <%= f.label :name %>
               <%= f.text_field :name, class: 'form-control' %>
@@ -16,8 +17,8 @@
             </div>
             
             <div class="form-group">
-              <%= f.label :Phone_Number %>
-              <%= f.text_field :Phone_Number, class: 'form-control' %>
+              <%= f.label :PhoneNumber %>
+              <%= f.text_field :PhoneNumber, class: 'form-control' %>
             </div>
             
             <div class="form-group">
